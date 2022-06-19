@@ -54,14 +54,15 @@ int Check(char input[], char guess[]){
 }
 
 void main(){
-    char input[NUM_DIGITS+1];
-    char guess[BUFFER_SIZE];
     int i;
     int j;
     int flug=0;
-    int try=0;
+    int try=0;    
+    char input[NUM_DIGITS+1];
+    char guess[BUFFER_SIZE];
+
     printf("Generating the numbers...\n");
-    srand(time(0));
+    srand(time(NULL));
     for(i=0;i<NUM_DIGITS;i++){
         while(1){
             flug=0;            
