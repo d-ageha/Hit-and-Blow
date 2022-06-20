@@ -1,0 +1,6 @@
+1. Install VS Code
+2. Install C extensions from marketplace
+3. Install MinGW for MSYS following instruction from C extension.
+4. Install gcc and gdb (you don't need other programs) in MinGW terminal.
+5. Add MinGW path to your environment variables.
+6. Change your locale setting to use UTF-8 (in case your directory structure contains non-ASCII characters).

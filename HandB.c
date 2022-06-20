@@ -21,7 +21,7 @@ int countBlow(char input[], char guess[]){
     int blow=0;
     for(i=0;i<NUM_DIGITS;i++){
         for(j=0;j<NUM_DIGITS;j++){
-            if(input[i]==guess[j]){
+            if(input[i]==guess[j] && i!=j){
                 blow++;
             }
         }
@@ -34,7 +34,6 @@ int Check(char input[], char guess[]){
     int B=0;
     H=countHit(input,guess);
     B=countBlow(input,guess);
-    B=B-H;
     if(H==NUM_DIGITS){
         return 1;
     }

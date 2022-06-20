@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 void main(){
-    int i=0; // 整数型(int)の変数iを定義して　0を代入する
+    int i=0; // 整数型(integer)の変数iを定義して　0を代入する
     printf("i=%d\n", i); // printfの機能：文字列の一部を変数で置き換える　int型の変数で置き換えたいなら%dと書く
     i=2; // iに2を代入
     printf("i=%d\n", i);
-    i+1; // iに1を足す
+    printf("i+1=%d\n",i+1); // i+1は3
     printf("i=%d\n", i); //... iは2のまま。
     i=i+1; // iに1を足したものをiに代入
     printf("i=%d\n", i); // iは3になる。
